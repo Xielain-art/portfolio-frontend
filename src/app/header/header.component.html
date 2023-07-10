@@ -1,12 +1,15 @@
 <header class="fixed w-full py-5 border-b-[1px] border-gray-300">
 	<div class="xl:w-[1200px] lg:w-[970px]  mx-auto px-[15px]">
-		<div class="flex gap-[30px] items-center">
+		<div class="flex gap-[30px] items-center" [ngClass]="{'justify-between': isMobile}">
 			<div class="basis-[300px]">
 				<app-title [renderAs]="'h1'" title="Ratmir"></app-title>
 			</div>
-			<nav class="grow">
+			<nav *ngIf="!isMobile" class="grow">
 				<app-nav-list></app-nav-list>
 			</nav>
+			<button *ngIf="isMobile" mat-icon-button>
+				<mat-icon>menu</mat-icon>
+			</button>
 		</div>
 	</div>
 </header>

@@ -7,13 +7,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { TitleDirective } from './core/directives/title.directive';
 import { LinkStyleDirective } from './core/directives/link-style.directive';
-import { TitleComponent } from './title/title.component';
+import { TitleComponent } from './shared/title/title.component';
 import { NavListComponent } from './nav-list/nav-list.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, TitleDirective, LinkStyleDirective, TitleComponent, NavListComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
-  exports: [TitleDirective],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    TitleDirective,
+    LinkStyleDirective,
+    TitleComponent,
+    NavListComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
