@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="renderAs">
+	<h1 appTitle *ngSwitchCase="'h1'">
+		{{title}}
+	</h1>
+	<h2 appTitle *ngSwitchCase="'h2'">
+		{{title}}
+	</h2>
+</ng-container>

@@ -1,6 +1,12 @@
-<header class="w-full">
+<header class="w-full p-5">
 	<div class="xl:w-[1200px] lg:w-[970px]  mx-auto px-[15px]">
-		<h1 appTitle class="">Ratmir</h1>
-
+		<div class="flex gap-[30px] items-center">
+			<div class="basis-[300px]">
+				<app-title [renderAs]="'h1'" title="Ратмир"></app-title>
+			</div>
+			<nav class="grow">
+				<app-nav-list></app-nav-list>
+			</nav>
+		</div>
 	</div>
 </header>
