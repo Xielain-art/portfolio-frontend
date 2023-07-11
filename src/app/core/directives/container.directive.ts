@@ -11,6 +11,7 @@ export class ContainerDirective {
     this.domElement.classList.add(
       'xl:w-[1200px]',
       'lg:w-[970px]',
+      'md:w-[750px]',
       'mx-auto',
       'px-[15px]'
     );
