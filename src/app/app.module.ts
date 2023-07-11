@@ -11,6 +11,7 @@ import { TitleComponent } from './shared/title/title.component';
 import { NavListComponent } from './nav-list/nav-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatIconModule } from '@angular/material/icon';
     LinkStyleDirective,
     TitleComponent,
     NavListComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
