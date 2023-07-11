@@ -12,6 +12,7 @@ import { NavListComponent } from './nav-list/nav-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContainerDirective } from './core/directives/container.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     TitleComponent,
     NavListComponent,
     AboutMeComponent,
+    ContainerDirective,
   ],
   imports: [
     BrowserModule,
