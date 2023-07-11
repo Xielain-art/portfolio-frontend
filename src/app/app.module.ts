@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContainerDirective } from './core/directives/container.directive';
 import { BorderDirective } from './core/directives/border.directive';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BorderDirective } from './core/directives/border.directive';
     AboutMeComponent,
     ContainerDirective,
     BorderDirective,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
