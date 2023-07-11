@@ -11,7 +11,7 @@ import { TitleComponent } from './shared/title/title.component';
 import { NavListComponent } from './nav-list/nav-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContainerDirective } from './core/directives/container.directive';
 import { BorderDirective } from './core/directives/border.directive';
 
