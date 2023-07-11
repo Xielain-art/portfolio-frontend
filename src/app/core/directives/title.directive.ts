@@ -26,7 +26,7 @@ export class TitleDirective implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['fontSizeType']) {
-      this.domElement.classList.add('title2');
+      this.domElement.classList.add('title2', 'maxLg:text-center');
     }
   }
 }
