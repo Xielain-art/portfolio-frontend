@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContainerDirective } from './core/directives/container.directive';
+import { BorderDirective } from './core/directives/border.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContainerDirective } from './core/directives/container.directive';
     NavListComponent,
     AboutMeComponent,
     ContainerDirective,
+    BorderDirective,
   ],
   imports: [
     BrowserModule,
