@@ -9,7 +9,9 @@ export class HeaderComponent implements OnInit {
   isMobile: boolean = false;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isMobile = window.innerWidth < 992;
+  }
 
   @HostListener('window:resize', ['$event'])
   onWindowResize() {

@@ -22,6 +22,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { FlexListComponent } from './shared/flex-list/flex-list.component';
 import { FlexListItemComponent } from './shared/flex-list/components/flex-list-item/flex-list-item.component';
 import { EducationComponent } from './components/education/education.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { EducationComponent } from './components/education/education.component';
     FlexListComponent,
     FlexListItemComponent,
     EducationComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
