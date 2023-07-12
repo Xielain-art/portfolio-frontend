@@ -15,6 +15,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContainerDirective } from './core/directives/container.directive';
 import { BorderDirective } from './core/directives/border.directive';
 import { SkillsComponent } from './components/skills/skills.component';
+import { TextStyleDirective } from './core/directives/text-style.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     ContainerDirective,
     BorderDirective,
     SkillsComponent,
+    TextStyleDirective,
   ],
   imports: [
     BrowserModule,
