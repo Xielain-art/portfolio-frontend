@@ -16,6 +16,7 @@ import { ContainerDirective } from './core/directives/container.directive';
 import { BorderDirective } from './core/directives/border.directive';
 import { SkillsComponent } from './components/skills/skills.component';
 import { TextStyleDirective } from './core/directives/text-style.directive';
+import { SkillsListComponent } from './components/skills/components/skills-list/skills-list.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TextStyleDirective } from './core/directives/text-style.directive';
     BorderDirective,
     SkillsComponent,
     TextStyleDirective,
+    SkillsListComponent,
   ],
   imports: [
     BrowserModule,
