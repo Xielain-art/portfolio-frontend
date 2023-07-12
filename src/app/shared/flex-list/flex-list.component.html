@@ -1,0 +1,12 @@
+<div class="flex maxLg:flex-col  gap-[30px]">
+	<div class="flex flex-col basis-[370px] shrink-0 maxLg:basis-0 maxLg:text-center">
+		<app-title renderAs="h2" [title]="title"></app-title>
+		<p appTextStyle>
+			<ng-content></ng-content>
+		</p>
+	</div>
+	<div class="grow gap-[30px] flex flex-col ">
+		<app-flex-list-item></app-flex-list-item>
+		<app-flex-list-item></app-flex-list-item>
+	</div>
+</div>

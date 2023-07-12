@@ -19,6 +19,9 @@ import { TextStyleDirective } from './core/directives/text-style.directive';
 import { SkillsListComponent } from './components/skills/components/skills-list/skills-list.component';
 import { SkillsListItemComponent } from './components/skills/components/skills-list-item/skills-list-item.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { FlexListComponent } from './shared/flex-list/flex-list.component';
+import { FlexListItemComponent } from './shared/flex-list/components/flex-list-item/flex-list-item.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { ExperienceComponent } from './components/experience/experience.componen
     SkillsListComponent,
     SkillsListItemComponent,
     ExperienceComponent,
+    FlexListComponent,
+    FlexListItemComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
