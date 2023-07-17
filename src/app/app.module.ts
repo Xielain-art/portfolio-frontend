@@ -23,6 +23,13 @@ import { FlexListComponent } from './shared/flex-list/flex-list.component';
 import { FlexListItemComponent } from './shared/flex-list/components/flex-list-item/flex-list-item.component';
 import { EducationComponent } from './components/education/education.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { MatCardModule } from '@angular/material/card';
+import { HoverDirective } from './core/directives/hover.directive';
+import { PortfolioDialogComponent } from './components/portfolio/components/portfolio-dialog/portfolio-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { LayoutModule } from '@angular/cdk/layout';
+import { PortfolioListComponent } from './components/portfolio/components/portfolio-list/portfolio-list.component';
+import { PortfolioListItemComponent } from './components/portfolio/components/portfolio-list-item/portfolio-list-item.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +51,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     FlexListItemComponent,
     EducationComponent,
     PortfolioComponent,
+    HoverDirective,
+    PortfolioDialogComponent,
+    PortfolioListComponent,
+    PortfolioListItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +62,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
+    MatDialogModule,
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
