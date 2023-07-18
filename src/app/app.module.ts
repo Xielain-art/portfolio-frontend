@@ -30,6 +30,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { LayoutModule } from '@angular/cdk/layout';
 import { PortfolioListComponent } from './components/portfolio/components/portfolio-list/portfolio-list.component';
 import { PortfolioListItemComponent } from './components/portfolio/components/portfolio-list-item/portfolio-list-item.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { MatInputModule } from '@angular/material/input';
+import { TextFieldModule } from '@angular/cdk/text-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -55,6 +59,7 @@ import { PortfolioListItemComponent } from './components/portfolio/components/po
     PortfolioDialogComponent,
     PortfolioListComponent,
     PortfolioListItemComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +70,9 @@ import { PortfolioListItemComponent } from './components/portfolio/components/po
     MatCardModule,
     MatDialogModule,
     LayoutModule,
+    TextFieldModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
