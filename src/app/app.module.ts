@@ -34,6 +34,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

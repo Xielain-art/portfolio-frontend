@@ -1,8 +1,9 @@
 <ul class="flex justify-end items-center gap-9">
-	<li appLinkStyle><a href="">{{ 'hello' | uppercase }}</a></li>
-	<li appLinkStyle><a href="">{{ 'skills' | uppercase }}</a></li>
-	<li appLinkStyle><a href="">{{ 'experience' | uppercase }}</a></li>
-	<li appLinkStyle><a href="">{{'education' | uppercase}}</a></li>
-	<li appLinkStyle><a href="">{{'portfolio' | uppercase}}</a></li>
-	<li appLinkStyle><a href="">{{'contact me' | uppercase}}</a></li>
+	<li appLinkStyle><a class="cursor-pointer" (click)="onClickScroll('hello')">{{ 'hello' | uppercase }}</a></li>
+	<li appLinkStyle><a class="cursor-pointer" (click)="onClickScroll('skills')">{{ 'skills' | uppercase }}</a></li>
+	<li appLinkStyle><a class="cursor-pointer" (click)="onClickScroll('experience')">{{ 'experience' | uppercase }}</a>
+	</li>
+	<li appLinkStyle><a class="cursor-pointer" (click)="onClickScroll('education')">{{'education' | uppercase}}</a></li>
+	<li appLinkStyle><a class="cursor-pointer" (click)="onClickScroll('portfolio')">{{'portfolio' | uppercase}}</a></li>
+	<li appLinkStyle><a class="cursor-pointer" (click)="onClickScroll('contact')">{{'contact me' | uppercase}}</a></li>
 </ul>

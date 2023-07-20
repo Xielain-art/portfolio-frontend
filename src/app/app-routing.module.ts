@@ -4,7 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      useHash: false,
+      // anchorScrolling: 'enabled',
+      onSameUrlNavigation: 'reload',
+      scrollOffset: [0, 300],
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
