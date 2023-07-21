@@ -8,7 +8,7 @@
 			<nav *ngIf="!isMobile" class="grow">
 				<app-nav-list></app-nav-list>
 			</nav>
-			<button *ngIf="isMobile" mat-icon-button>
+			<button (click)="openMenu()" *ngIf="isMobile" mat-icon-button>
 				<mat-icon>menu</mat-icon>
 			</button>
 		</div>

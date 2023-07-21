@@ -34,7 +34,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { RouterModule } from '@angular/router';
+import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +61,7 @@ import { RouterModule } from '@angular/router';
     PortfolioListComponent,
     PortfolioListItemComponent,
     ContactComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,
