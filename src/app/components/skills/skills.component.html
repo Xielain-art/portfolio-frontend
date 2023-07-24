@@ -1,5 +1,7 @@
 <section id="skills" appBorder class="py-10 min-h-[330px]">
 	<div appContainer>
-		<app-skills-list></app-skills-list>
+		<ng-container *ngIf="skills$ | async as skills">
+			<app-skills-list [skills]="skills"></app-skills-list>
+		</ng-container>
 	</div>
 </section>

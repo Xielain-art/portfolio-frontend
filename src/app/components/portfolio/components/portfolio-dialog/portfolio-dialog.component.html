@@ -1,19 +1,22 @@
 <section class="flex flex-col gap-5">
 	<div class="flex flex-col gap-1">
-		<app-title title="gdfgdfgdfgd" renderAs="h2">
+		<app-title [title]="data.title" renderAs="h2">
 		</app-title>
-		<p appTextStyle>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quod quas corporis, enim amet
-			nostrum aut esse quo odit praesentium.</p>
+		<p appTextStyle>{{data.description}}</p>
 		<div class="text-xs flex flex-col gap-3">
 			<div class="flex gap-1">
 				<span class=" font-bold">STACK</span>
-				<p>12G GDF GDFG DF GFD GFD GFD GDF G3</p>
+				<p>{{data.stack}}</p>
 			</div>
 			<div class="flex gap-1">
-				<span class=" font-bold">DATE</span>
-				<p>123</p>
+				<ng-container *ngIf="data.date as date">
+					<span class=" font-bold">DATE</span>
+					<p>{{date | date: 'mediumDate'}}</p>
+				</ng-container>
 			</div>
 		</div>
-		<img src="http://via.placeholder.com/640x360" class="w-full" alt="">
+		<ng-container *ngIf="data.image as img">
+			<img [src]="img" class="w-full " alt="">
+		</ng-container>
 	</div>
 </section>

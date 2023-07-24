@@ -5,17 +5,8 @@
 			Distinctio, quasi. Vero labore
 			velit odit pariatur? Accusamus labore consequatur perferendis commodi?</p>
 	</div>
-	<div class=" flex flex-wrap gap-[30px] maxLg:flex-col maxLg:gap-[10px]">
-		<app-skills-list-item description="gdfffffff fffffdgf gdfgdfg dfgdfgdfgdfgdfgdfgdfgdfgdfgdfg"
-			title="Web Development"></app-skills-list-item>
-		<app-skills-list-item description="gdffffff ffffffdgfgdfgdfg dfgdfgdfgdfgd fgdfgdfgdfgdfgdfg"
-			title="Web Development">
-		</app-skills-list-item>
-		<app-skills-list-item description="gdffffff ffffffdgfgdfgdf gdfgdfgdfgd fgdfgdfgdfgdfgdfgdfg"
-			title="Web Development">
-		</app-skills-list-item>
-		<app-skills-list-item description="gdffffff ffffffdgfgdfgdf gdfgdfgdf gdfgdfgdfgdfgdfgdfgdfg"
-			title="Web Development">
+	<div class="flex flex-wrap gap-[30px] justify-between maxLg:flex-col maxLg:gap-[10px] grow">
+		<app-skills-list-item *ngFor="let skill of skills" [description]="skill.description" [title]="skill.title">
 		</app-skills-list-item>
 	</div>
 </div>

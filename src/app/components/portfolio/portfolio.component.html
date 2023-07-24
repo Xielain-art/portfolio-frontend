@@ -1,6 +1,8 @@
 <section id="portfolio" class="py-10 border-b-[1px] border-gray-300">
 	<div appContainer>
 		<app-title renderAs="h2" title="Portfolio"></app-title>
-		<app-portfolio-list></app-portfolio-list>
+		<ng-container *ngIf="portfolio$ | async as portfolio">
+			<app-portfolio-list [portfolioList]="portfolio"></app-portfolio-list>
+		</ng-container>
 	</div>
 </section>
