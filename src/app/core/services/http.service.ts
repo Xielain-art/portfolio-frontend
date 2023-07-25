@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { Education } from '../models/education.model';
+import { EmailBody } from '../models/email-body.model';
 import { Experience } from '../models/experience.model';
 import { Portfolio } from '../models/portfolio.model';
 import { Skill } from '../models/skill.model';
@@ -19,4 +20,12 @@ export class HttpService {
     this.http.get<Education[]>('/api/education');
 
   constructor(private http: HttpClient) {}
+
+  public sendEmail(data: EmailBody): Observable<{ status: string }> {
+    return this.http.post<{ status: string }>('/api/mail', data).pipe(
+      catchError((err: HttpErrorResponse) => {
+        return throwError(() => err);
+      })
+    );
+  }
 }

@@ -7,25 +7,27 @@
 					reiciendis
 					laboriosam praesentium temporibus minima recusandae tempore repellendus.</p>
 			</div>
-			<div class="grow">
-				<form class="w-full flex gap-[30px] maxLg:flex-col">
-					<div class="flex flex-col gap-[30px]">
+			<div class="grow flex flex-col">
+				<form [formGroup]="sendEmailForm" class="w-full   flex gap-[30px] maxLg:flex-col">
+					<div class="flex flex-shrink-0 flex-col gap-[30px]">
 						<mat-form-field class="example-full-width">
 							<mat-label>Name</mat-label>
-							<input matInput placeholder="Name">
+							<input formControlName="name" matInput placeholder="Name">
 						</mat-form-field>
 						<mat-form-field class="example-full-width">
 							<mat-label>Email</mat-label>
-							<input matInput placeholder="Email">
+							<input type="email" formControlName="senderEmail" matInput placeholder="Email">
 						</mat-form-field>
 					</div>
-
 					<mat-form-field class="w-full">
 						<mat-label>Message</mat-label>
-						<textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="6.3"
-							cdkAutosizeMaxRows="5"></textarea>
+						<textarea formControlName="message" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+							cdkAutosizeMinRows="6.3" cdkAutosizeMaxRows="5"></textarea>
 					</mat-form-field>
+
 				</form>
+				<button (click)="sendEmail()" [disabled]="sendEmailForm.invalid" mat-raised-button
+					color="primary">SEND</button>
 			</div>
 		</div>
 	</div>
