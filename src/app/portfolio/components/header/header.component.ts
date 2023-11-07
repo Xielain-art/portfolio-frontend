@@ -1,7 +1,6 @@
 import { Overlay } from '@angular/cdk/overlay';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { IsMobileService } from 'src/app/core/services/is-mobile.service';
 import { MobileMenuComponent } from '../mobile-menu/mobile-menu.component';
 
 @Component({

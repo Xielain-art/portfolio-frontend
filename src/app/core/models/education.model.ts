@@ -1,4 +1,4 @@
-export interface Education {
+export interface IEducation {
   id: number;
   title: string;
   description?: string;

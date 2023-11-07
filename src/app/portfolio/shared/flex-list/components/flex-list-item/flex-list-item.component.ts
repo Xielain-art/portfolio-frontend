@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Education } from 'src/app/core/models/education.model';
-import { Experience } from 'src/app/core/models/experience.model';
+import { IEducation } from 'src/app/core/models/education.model';
+import { IExperience } from 'src/app/core/models/experience.model';
 
 @Component({
   selector: 'app-flex-list-item',
@@ -8,7 +8,7 @@ import { Experience } from 'src/app/core/models/experience.model';
   styleUrls: ['./flex-list-item.component.sass'],
 })
 export class FlexListItemComponent implements OnInit {
-  @Input() flexItem: Experience | Education | null = null;
+  @Input() flexItem: IExperience | IEducation | null = null;
   constructor() {}
 
   ngOnInit(): void {}

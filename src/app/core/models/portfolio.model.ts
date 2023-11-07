@@ -1,7 +1,7 @@
-export interface Portfolio {
+export interface IPortfolio {
   id: number;
   title: string;
-  date?: Date;
+  date?: string;
   description?: string;
   stack: string;
   image: string;

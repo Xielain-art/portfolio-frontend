@@ -5,9 +5,8 @@
 			<ng-content></ng-content>
 		</p>
 	</div>
-	<div *ngFor="let item of data" class="grow gap-[30px] flex flex-col ">
-		<app-flex-list-item [flexItem]="item">
+	<div class="flex grow gap-[30px] flex-col">
+		<app-flex-list-item *ngFor="let item of data" [flexItem]="item">
 		</app-flex-list-item>
-
 	</div>
 </div>

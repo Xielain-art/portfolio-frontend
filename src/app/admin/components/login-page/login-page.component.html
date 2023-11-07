@@ -1,0 +1,19 @@
+<section>
+	<div appContainer class="min-h-full">
+		<div class="min-h-screen flex items-center justify-center">
+			<form [formGroup]="loginForm" class="flex basis-[300px] flex-col gap-2">
+				<mat-form-field>
+					<mat-label>Email</mat-label>
+					<input formControlName="email" matInput type="email">
+				</mat-form-field>
+				<mat-form-field>
+					<mat-label>Password</mat-label>
+					<input formControlName="password" matInput type="password">
+				</mat-form-field>
+				<button (click)="submitForm()" [disabled]="loginForm.invalid" mat-button>Login</button>
+				<button (click)="redirectToMainPage()" mat-raised-button class="font-bold">Go back to the main
+					page</button>
+			</form>
+		</div>
+	</div>
+</section>

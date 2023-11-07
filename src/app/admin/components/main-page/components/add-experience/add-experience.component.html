@@ -1,0 +1,46 @@
+<app-modal-window>
+	<form [formGroup]="addExperienceForm" class="flex flex-col">
+		<mat-form-field class="grow">
+			<mat-label>
+				Title
+			</mat-label>
+			<input formControlName="title" matInput type="text">
+		</mat-form-field>
+		<mat-form-field>
+			<mat-label>
+				Description
+			</mat-label>
+			<textarea formControlName="description" matInput></textarea>
+		</mat-form-field>
+		<mat-form-field>
+			<mat-label>
+				Where
+			</mat-label>
+			<input formControlName="where" matInput>
+		</mat-form-field>
+		<mat-form-field>
+			<mat-label>Choose a start date</mat-label>
+			<input formControlName="start" matInput [matDatepicker]="pickerStart">
+			<mat-hint>MM/DD/YYYY</mat-hint>
+			<mat-datepicker-toggle matIconSuffix [for]="pickerStart">
+				<mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+			</mat-datepicker-toggle>
+			<mat-datepicker #pickerStart></mat-datepicker>
+		</mat-form-field>
+		<mat-form-field>
+			<mat-label>Choose a end date</mat-label>
+			<input formControlName="end" matInput [matDatepicker]="pickerEnd">
+			<mat-hint>MM/DD/YYYY</mat-hint>
+			<mat-datepicker-toggle matIconSuffix [for]="pickerEnd">
+				<mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+			</mat-datepicker-toggle>
+			<mat-datepicker #pickerEnd></mat-datepicker>
+		</mat-form-field>
+
+		<div class="flex gap-2">
+			<button [disabled]="!addExperienceForm.valid" mat-raised-button class="basis-1/2"
+				(click)="onFormSubmit()">Add</button>
+			<button mat-raised-button class="basis-1/2" color="warn" (click)="resetForm()">Clear form</button>
+		</div>
+	</form>
+</app-modal-window>

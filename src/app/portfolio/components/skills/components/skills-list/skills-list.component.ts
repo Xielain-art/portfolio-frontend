@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Skill } from 'src/app/core/models/skill.model';
+import { ISkill } from 'src/app/core/models/skill.model';
 
 @Component({
   selector: 'app-skills-list',
@@ -7,7 +7,7 @@ import { Skill } from 'src/app/core/models/skill.model';
   styleUrls: ['./skills-list.component.sass'],
 })
 export class SkillsListComponent implements OnInit {
-  @Input() skills: Skill[] = [];
+  @Input() skills: ISkill[] = [];
 
   constructor() {}
 

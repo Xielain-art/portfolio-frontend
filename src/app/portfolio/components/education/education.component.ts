@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from 'src/app/core/services/http.service';
+import { HttpService } from '../../core/services/http.service';
 
 @Component({
   selector: 'app-education',

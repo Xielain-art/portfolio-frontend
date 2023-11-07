@@ -4,7 +4,8 @@
 			<h3 class="text-lg font-bold">{{ item.title}}</h3>
 			<span *ngIf="" appTextStyle>{{item.where || ''}}</span>
 		</div>
-		<span *ngIf="item.start && item.end" appTextStyle>{{item.start}} - {{item.end}}</span>
+		<span *ngIf="item.start && item.end" appTextStyle>{{item.start | date: 'mediumDate'}} - {{item.end | date:
+			'mediumDate'}}</span>
 		<p appTextStyle>{{ item.description }}</p>
 	</div>
 </ng-container>

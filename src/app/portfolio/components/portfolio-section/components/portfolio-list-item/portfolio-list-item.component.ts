@@ -1,9 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Portfolio } from 'src/app/core/models/portfolio.model';
+import { IPortfolio } from 'src/app/core/models/portfolio.model';
+import { environment } from 'src/environments/environment';
 import { DialogData } from '../../models/dialog-data.model';
 import { PortfolioDialogComponent } from '../portfolio-dialog/portfolio-dialog.component';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-portfolio-list-item',
@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./portfolio-list-item.component.sass'],
 })
 export class PortfolioListItemComponent {
-  @Input() portfolioItem: Portfolio | undefined;
+  @Input() portfolioItem: IPortfolio | undefined;
 
   staticUrl = environment.staticUrl;
 
